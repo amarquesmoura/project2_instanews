@@ -1,0 +1,15 @@
+html {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: black;
+}
+
+body {
+  @include desktop {
+    background: black;
+  }
+}
+
+h1 {
+  color: blue;
+}
