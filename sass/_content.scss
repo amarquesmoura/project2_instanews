@@ -1,8 +1,14 @@
 .loader {
   display: none;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  align-items: center;
 }
 
-.results_container {
+.results {
+  display: flex;
+  justify-items: center;
   width: 100%;
 }
 
