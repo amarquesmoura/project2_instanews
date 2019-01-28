@@ -1,3 +1,17 @@
 .loader {
   display: none;
 }
+
+.results_container {
+  width: 100%;
+}
+
+.results ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.results li {
+  flex: 1 1 auto;
+  width: 100%;
+}

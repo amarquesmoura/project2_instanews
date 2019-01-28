@@ -14,7 +14,7 @@ $(function() {
     if (section === "") return;
 
     // 1c. Show a loader to the user clear out old stories.
-    $(".loader").toggle();
+    $(".loader").show();
     $(".articles").empty();
 
     // make our ajax request
@@ -25,43 +25,42 @@ $(function() {
         "https://api.nytimes.com/svc/topstories/v2/" +
         section +
         ".json?api-key=N8PTNVMsydAsVz1zZpGLuJV22NbJOlQB"
-    })
-      .done(function(data) {
-        // console.log(data.results[0].title);
+    }).done(function(data) {
+      // console.log(data.results[0].title);
+      // append all the things
+      // 1. filter out articles without an image
+      const filtered = data.results.filter(function(value) {
+        // if (value.multimedia.length !== 0) return true;
+        // else return false;
 
-        // append all the things
-        // 1. filter out articles without an image
-        // 2. create .each to run a function for each article in response.results
-        // 3. for each article, create constants for image URL, title and link
-        // 4. make an HTML string for the article, using the constants we just created
-        // 5. append strings to stories section
+        return value.multimedia.length;
+      });
+      const twelve = filtered.slice(0, 11);
+      // 2. create .each to run a function for each article in response.results
+      // 3. for each article, create constants for image URL, title and link
+      // 4. make an HTML string for the article, using the constants we just created
+      // 5. append strings to stories section
 
-        $.each(data.results, function(key, value) {
-          if (value.multimedia !== "[]") {
-            $(".articles").append(
-              '<a href="' +
-                value.url +
-                '" target="_blank">' +
-                "<li>" +
-                value.title +
-                "<img src=" +
-                value.multimedia[4].url +
-                "></li>"
-            );
-          } else {
-            $.append(
-              '<p class="error">Your search produced no results. Please try another subject.</p>'
-            );
-          }
-        });
+      $.each(twelve, function(key, value) {
+        $(".articles").append(
+          "<li>" +
+            '<a href="' +
+            value.url +
+            '" target="_blank">' +
+            '<div class="article_box" style="background-image:url(' +
+            value.multimedia[4].url +
+            ')">' +
+            value.title +
+            "</li>"
+        );
       })
-      .fail(
-        function() {
+    })
+        .fail(function() {
           $.alert("Something went wrong. Please try again.");
-        }.always(function() {
-          // hide the loader
-          $(".loader").toggle();
         })
-      );
+        .always(function() {
+          // hide the loader
+          $(".loader").hide();
+        });
   });
 });
