@@ -8,6 +8,7 @@
   },
   "author": "Andre Moura",
   "license": "ISC",
+  "repository": "https://github.com/amarquesmoura/project2_instanews",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",

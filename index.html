@@ -8,15 +8,30 @@
   </head>
 
   <body>
-    <div class="maincontainer">
+    <div class="main_container">
       <header>
-        <section class="nyt_logo"><h1>NY Times logo</h1></section>
+        <section class="nyt_logo">
+          <img src="./images/nyt-logo.svg" alt="The New York Times Logo" />
+        </section>
       </header>
-      <section class="news_sections"></section>
+      <section class="news_sections">
+        <form class="drop-down" action="#" method="POST">
+          <p>Choose a section</p>
+          <select name="selector" class="selector">
+            <option value="">Sections...</option>
+            <option value="books">Books</option>
+            <option value="business">Business</option>
+            <option value="food">Food</option>
+            <option value="technology">Technoology</option>
+            <option value="travel">Travel</option>
+            <option value="world">World</option>
+          </select>
+        </form>
+      </section>
     </div>
 
-    <div>
-      <form><option></option></form>
+    <div class="results_container">
+      <section class="results"><ul class="articles"></ul></section>
     </div>
 
     <footer></footer>

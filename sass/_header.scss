@@ -1,0 +1,17 @@
+.main_container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+}
+
+.nyt_logo,
+.news_sections {
+  display: flex;
+  justify-content: center;
+}
+
+// .nyt_logo img {
+//   max-width: 150px;
+//   max-height: 150px;
+// }

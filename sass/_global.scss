@@ -5,9 +5,9 @@ html {
 }
 
 body {
+  margin: 0;
   @include desktop {
-    background: black;
-  }
+  } 
 }
 
 h1 {
