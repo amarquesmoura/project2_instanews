@@ -5,12 +5,12 @@ $(function() {
   // Listen for the select menu to change and capture its value
   $(".selector").on("change", function() {
     const section = $(this).val();
-
     // If the select value is "" do nothing and return from the function immediately.
     if (section === "") return;
 
     // Clear out old stories and show a loader to the user.
     $(".articles").empty();
+    $(".logo_and_form").addClass("after-select");
     $(".loader").show();
 
     // Make the ajax request
@@ -41,7 +41,8 @@ $(function() {
               '<div class="article_box" style="background-image:url(' +
               value.multimedia[4].url +
               ')">' +
-              '<div class="abstract"><p>' + value.abstract +
+              '<div class="abstract"><p>' +
+              value.abstract +
               "</p></div></a></li>"
           );
         });

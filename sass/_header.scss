@@ -9,6 +9,25 @@
   @include tablet {
     flex-direction: row;
     align-items: center;
+    .after-select {
+      height: unset;
+      justify-content: unset;
+      align-content: unset;
+    }
+  }
+}
+
+.after-select {
+  @include desktop {
+    height: unset;
+    justify-content: unset;
+    align-content: unset;
+  }
+
+  @include tablet {
+    height: unset;
+    justify-content: unset;
+    align-content: unset;
   }
 }
 

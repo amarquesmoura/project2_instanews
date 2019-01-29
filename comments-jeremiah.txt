@@ -1,0 +1,14 @@
+HTML:
+Good symantics for each section and div in your hmtl. Its understandable and makes sence. Great idea for putting the loader gif
+in your html and then using ajax to call it. I would suggest that a div around the info added from the api would give a better
+visual of where the info is appended.
+
+JS:
+Maybe remove some of the unessasry comments for your JS, some of them are good. The ones that describe the functions only.
+You used you const and let variables properly in your js.
+
+.git 
+You have all the requirements 
+
+CSS:
+Have some image positioning errors and aligning of text and other items. 

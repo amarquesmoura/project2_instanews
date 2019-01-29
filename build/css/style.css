@@ -392,7 +392,32 @@ h1 {
               flex-direction: row;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center; }
+      .logo_and_form .after-select {
+        height: unset;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
+        -ms-flex-line-pack: unset;
+            align-content: unset; } }
+
+@media (min-width: 1000px) {
+  .after-select {
+    height: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -ms-flex-line-pack: unset;
+        align-content: unset; } }
+
+@media (min-width: 600px) {
+  .after-select {
+    height: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -ms-flex-line-pack: unset;
+        align-content: unset; } }
 
 .nyt_logo {
   display: -webkit-box;
