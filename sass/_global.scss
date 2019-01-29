@@ -21,6 +21,7 @@ h1 {
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 1600;
+  justify-content: space-between;
+  max-width: 1600px;
   height: 100%;
 }
