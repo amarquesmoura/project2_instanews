@@ -47,6 +47,10 @@
     flex-flow: row wrap;
     margin: 0;
   }
+
+  @include desktop {
+    width: 25%;
+  }
 }
 
 .results .article_box {

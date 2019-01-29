@@ -485,6 +485,9 @@ h1 {
           -ms-flex-flow: row wrap;
               flex-flow: row wrap;
       margin: 0; } }
+  @media (min-width: 1000px) {
+    .results li {
+      width: 25%; } }
 
 .results .article_box {
   display: -webkit-box;
