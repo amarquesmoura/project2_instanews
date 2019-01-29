@@ -6,15 +6,23 @@
   align-items: center;
 }
 
-.results {
-  display: flex;
-  justify-items: center;
+.results_container {
   width: 100%;
 }
 
-.results ul {
+.results {
   display: flex;
+  justify-items: center;
+}
+
+.results a {
+  text-decoration: none;
+}
+
+.results ul {
   flex-flow: column wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .results li {

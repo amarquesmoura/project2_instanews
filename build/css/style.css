@@ -309,6 +309,7 @@ template {
   display: none; }
 
 /* End of CSS Reset */
+/* Fonts Loading */
 @font-face {
   font-family: "Open Sans";
   src: url("../../fonts/OpenSansLight-Italic.eot");
@@ -337,6 +338,7 @@ template {
   font-weight: bold;
   font-style: italic; }
 
+/* End of Fonts Loading */
 html {
   font-family: "Open Sans";
   font-weight: 300;
@@ -379,21 +381,25 @@ h1 {
       -ms-flex-align: center;
           align-items: center; }
 
+.results_container {
+  width: 100%; }
+
 .results {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
-  width: 100%; }
+  justify-items: center; }
+
+.results a {
+  text-decoration: none; }
 
 .results ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
-          flex-flow: column wrap; }
+          flex-flow: column wrap;
+  list-style: none;
+  padding: 0; }
 
 .results li {
   -webkit-box-flex: 1;
