@@ -16,60 +16,61 @@
 .results {
   display: flex;
   justify-items: center;
+
   @include tablet {
     flex: 0 1 50%;
     flex-flow: row wrap;
   }
-}
 
-.results a {
-  text-decoration: none;
-}
-
-.results ul {
-  flex-flow: column wrap;
-  list-style: none;
-  padding: 0;
-
-  @include tablet {
-    display: inline-block;
-    flex-flow: row wrap;
-  }
-}
-
-.results li {
-  flex: 1 1 auto;
-  width: 100%;
-
-  @include tablet {
-    display: inline-block;
-    flex: 0 1 50%;
-    width: 50%;
-    flex-flow: row wrap;
-    margin: 0;
+  & a {
+    text-decoration: none;
   }
 
-  @include desktop {
-    width: 25%;
-  }
-}
+  & ul {
+    flex-flow: column wrap;
+    list-style: none;
+    padding: 0;
 
-.results .article_box {
-  display: flex;
-  height: 420px;
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: center;
-  align-items: flex-end;
+    @include tablet {
+      display: inline-block;
+      flex-flow: row wrap;
+    }
+  }
+
+  & li {
+    flex: 1 1 auto;
+    width: 100%;
+
+    @include tablet {
+      display: inline-block;
+      flex: 0 1 50%;
+      width: 50%;
+      flex-flow: row wrap;
+      margin: 0;
+    }
+
+    @include desktop {
+      width: 25%;
+    }
+  }
+
+  & .article_box {
+    display: flex;
+    height: 420px;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+    align-items: flex-end;
+  }
 }
 
 .abstract {
   background-color: rgba($color: #000, $alpha: 0.6);
   color: #fff;
   line-height: 1.5;
-}
 
-.abstract p {
-  margin: 0;
-  padding: 0.5rem;
+  & p {
+    margin: 0;
+    padding: 0.5rem;
+  }
 }

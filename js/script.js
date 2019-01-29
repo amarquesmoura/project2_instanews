@@ -31,11 +31,7 @@ $(function() {
         // Reduce the number of article to a max of 12
         const twelve = filtered.slice(0, 12);
 
-        // 2. create .each to run a function for each article in response.results
-        // 3. for each article, create constants for image URL, title and link
-        // 4. make an HTML string for the article, using the constants we just created
-        // 5. append strings to stories section
-
+        // Run a function for each article and append HTML strings to articles section
         $.each(twelve, function(key, value) {
           $(".articles").append(
             "<li>" +
