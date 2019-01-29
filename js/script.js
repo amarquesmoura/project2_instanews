@@ -45,8 +45,8 @@ $(function() {
               '<div class="article_box" style="background-image:url(' +
               value.multimedia[4].url +
               ')">' +
-              value.title +
-              "</li>"
+              value.abstract +
+              "</a></li>"
           );
         });
       })

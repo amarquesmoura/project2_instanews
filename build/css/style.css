@@ -407,6 +407,10 @@ h1 {
           flex: 1 1 auto;
   width: 100%; }
 
+.results .article_box {
+  height: 420px;
+  background-size: cover; }
+
 .page_footer {
   color: #c2c2c2;
   font-size: 0.9rem; }
