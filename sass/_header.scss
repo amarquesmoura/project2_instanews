@@ -1,12 +1,16 @@
-.main_container {
+.logo_and_form {
+  height: 100%;
   display: flex;
-  position: relative;
-  width: 100%;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
-.nyt_logo,
-.news_sections {
+.nyt_logo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  padding: 0.5rem;
 }
+

@@ -8,10 +8,19 @@ html {
 
 body {
   margin: 0;
+  height: 100vh;
   @include desktop {
   }
 }
 
 h1 {
   color: blue;
+}
+
+.main_container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 1600;
+  height: 100%;
 }

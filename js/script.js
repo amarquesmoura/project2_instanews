@@ -29,7 +29,7 @@ $(function() {
         });
 
         // Reduce the number of article to a max of 12
-        const twelve = filtered.slice(0, 11);
+        const twelve = filtered.slice(0, 12);
 
         // 2. create .each to run a function for each article in response.results
         // 3. for each article, create constants for image URL, title and link
@@ -45,8 +45,8 @@ $(function() {
               '<div class="article_box" style="background-image:url(' +
               value.multimedia[4].url +
               ')">' +
-              value.abstract +
-              "</a></li>"
+              '<div class="abstract"><p>' + value.abstract +
+              "</p></div></a></li>"
           );
         });
       })
