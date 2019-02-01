@@ -1,5 +1,5 @@
 .logo_and_form {
-  height: 100%;
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -16,12 +16,9 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 0.5rem;
   transition: all 0.5s ease-in-out 0.5s;
 
   @include tablet {
     flex: 0 1 25%;
-    max-width: 120px;
-    height: 8rem;
   }
 }
